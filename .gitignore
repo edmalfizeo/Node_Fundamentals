@@ -1,0 +1,48 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# TypeScript
+*.tsbuildinfo
+dist/
+
+# Logs
+logs
+*.log
+log-*.log
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# IDEs/Editors
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Test Coverage
+coverage/
+.nyc_output/
+
+# Linting Tools
+.eslintcache
+.biome.json
+
+# Optional cache
+.cache/
+
+# Fastify-related
+.fastify/
+
+# Vitest
+.vitest/
+*.spec.cache
