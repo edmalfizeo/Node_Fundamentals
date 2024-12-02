@@ -1,4 +1,4 @@
-import { createTaskHandler } from "../handlers/create_task_handler";
+import { createTaskHandler } from "../handlers/createTask.handler";
 import { FastifyRequest, FastifyReply } from "fastify";
 
 interface CreateTaskRequestBody {

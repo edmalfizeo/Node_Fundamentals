@@ -1,11 +1,9 @@
 import { describe, it, expect, vi } from "vitest";
 import { v4 as uuid } from 'uuid';
-import { createTask } from "../../controllers/create_task";
-import { createTaskHandler } from "../../handlers/create_task_handler";
-import { send } from "process";
-import { create } from "domain";
+import { createTask } from "../../controllers/createTask.controller";
+import { createTaskHandler } from "../../handlers/createTask.handler";
 
-vi.mock('../../handlers/create_task_handler', () => ({
+vi.mock('../../handlers/createTask.handler', () => ({
     createTaskHandler: {
         create: vi.fn().mockReturnValue({
             id: uuid(),
@@ -28,10 +26,7 @@ describe('createTaskController', () => {
         await createTask(mockRequest as any, mockReply as any);
 
          // Verifica se o handler foi chamado com os dados corretos
-        expect(createTaskHandler.create).toHaveBeenCalledWith({
-            title: 'Task 1',
-            description: 'Description 1'
-        });
+        expect(createTaskHandler.create).toHaveBeenCalledWith({ title: 'Task 1', description: 'Description 1' });
 
         const sentResponse = mockReply.send.mock.calls[0][0];
         expect(sentResponse).toMatchObject({

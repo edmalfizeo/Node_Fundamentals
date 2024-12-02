@@ -1,5 +1,5 @@
 import {describe, it, expect} from 'vitest';
-import {createTaskHandler} from '../../handlers/create_task_handler';
+import {createTaskHandler} from '../../handlers/createTask.handler';
 
 describe('createTaskHandler', () => {
     it('should create a task and return it', () => {
