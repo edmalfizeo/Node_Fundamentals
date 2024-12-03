@@ -48,6 +48,6 @@ describe('createTaskController', () => {
         await createTask(mockRequest as any, mockReply as any);
 
         expect(mockReply.code).toHaveBeenCalledWith(400);
-        expect(mockReply.send).toHaveBeenCalledWith({ error: 'Title is required' });
+        expect(mockReply.send).toHaveBeenCalledWith({ error: 'All information are required (title and description)' });
     })
 })

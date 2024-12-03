@@ -10,7 +10,7 @@ export const createTask = async (request: FastifyRequest<{ Body: CreateTaskReque
     const { title, description } = request.body;
 
     if (!title || !description) {
-        reply.code(400).send({ error: 'Title is required' });
+        reply.code(400).send({ error: 'All information are required (title and description)' });
         return;
       }
 

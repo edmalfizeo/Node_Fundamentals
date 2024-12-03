@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "server": "node ./src/app.ts",
+    "server": "ts-node ./src/app.ts",
     "test": "vitest",
     "test:watch": "vitest --watch"
   },
