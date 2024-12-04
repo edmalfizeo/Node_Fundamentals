@@ -66,3 +66,25 @@ This project was developed with the goal of improving skills in:
 2. **Best practices in architecture**: Applying patterns like MVC.
 3. **Automated testing**: Ensuring code quality through unit and integration tests.
 4. **Project organization**: Creating modular and scalable structures.
+
+## **How to run**
+
+1 - Clone Repository:
+```bash
+git clone 
+```
+
+2 - Install Dependencies
+```bash
+npm install
+```
+
+3 - Run Server
+```
+npm run server
+```
+
+4 - Run Tests
+```
+npm run test
+```
