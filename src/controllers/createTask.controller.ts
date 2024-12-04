@@ -14,7 +14,14 @@ export const createTask = async (request: FastifyRequest<{ Body: CreateTaskReque
         return;
       }
 
-    const task = createTaskHandler.create({ title, description });
+      try {
+        const task = createTaskHandler.create({ title, description });
 
-    reply.code(201).send(task);
+        reply.code(201).send(task);
+      } catch (error) {
+        if (error instanceof Error) {
+          reply.code(500).send({ error: error.message });
+        }
+      }
+    
 }
