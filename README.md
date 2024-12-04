@@ -34,7 +34,7 @@ The application implements the following operations:
 ## **Project Structure**
 
 The project structure is organized to be scalable and easy to navigate and maintain. Below is an overview of the main directories:
-
+```graphql
 src/
 ├── @types/            # TypeScript type definitions
 ├── controllers/       # HTTP request logic
@@ -45,7 +45,7 @@ src/
 │   ├── test_handlers/
 │   ├── test_integrations/
 └── app.ts             # Main application configuration
-
+```
 ---
 
 ## **Technologies Used**
