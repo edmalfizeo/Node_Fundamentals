@@ -1,7 +1,7 @@
 import { fastify } from 'fastify';
 import { taskRoutes } from './routes/taskRoutes';
 
-const app = fastify();
+export const app = fastify();
 
 app.register(taskRoutes, { prefix: '/tasks' });
 
