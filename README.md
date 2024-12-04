@@ -71,7 +71,7 @@ This project was developed with the goal of improving skills in:
 
 1 - Clone Repository:
 ```bash
-git clone 
+git clone https://github.com/edmalfizeo/Node_Fundamentals.git
 ```
 
 2 - Install Dependencies
